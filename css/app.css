@@ -1,0 +1,89 @@
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 0;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 50%;
+}
+
+h1 {
+    margin: 0;
+
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 0.895rem;
+    color: hsl(75, 94%, 57%);
+    font-weight: 600;
+
+    margin-top: 0.5rem;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: clamp(16rem,75vw,18rem); 
+
+    border-radius: 0.75rem;
+
+    background: hsl(0, 0%, 12%);
+
+    padding: 1.5rem;
+
+    font-family: "Inter", sans-serif;
+}
+
+@media (min-width: 620px) {
+    .app {
+        padding: 1.5rem 2.5rem;
+    }
+  }
+  
+ul {
+    list-style: none;
+}
+
+ul.social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+
+    margin: 0.15rem;
+    padding-left: 0;
+}
+
+li {
+    margin: 0.5rem;
+    width: 100%;
+    font-weight: 700;
+}
+
+.social-media a {
+    display: block;
+    width: 100%;
+
+    text-align: center;
+    text-decoration: none;
+    background: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 100%);
+
+    border-radius: 0.5rem;
+
+    padding: 0.9rem 0;
+}
+
+.social-media a:hover, .social-media a:active {
+    background: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 12%);
+}
